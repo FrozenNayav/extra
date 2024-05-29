@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+
+<style>
+
+body{
+    height: 100000px;
+}
+
+
+
+.box{
+    height: 500px;
+    width: 500px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.innerbox{
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+    position: absolute;
+    
+    left: 25%;
+    bottom: 25%;
+    z-index: 1;
+}
+
+
+.innerbox2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(98, 255, 0);
+    position: absolute;
+    
+    left: 25%;
+    bottom: 25%;
+    z-index: 2;
+}
+.sticky-box{
+height: 40px;
+width: 100%;
+background-color: fuchsia;
+top: 0px;
+position: fixed ;
+}
+
+.rectangle{
+    
+    height: 100px;
+    width: 100px;
+    background-color: rgb(98, 255, 0);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+    
+<div class="box"><div class="innerbox"></div>
+<div class="innerbox2"></div></div>
+
+<div class="sticky-box"></div>
+<div class="rectangle"></div>
+<!-- positive
+relative
+ absulate
+sticky
+fixed
+static-->
+
+
+
+</body>
+</html>
